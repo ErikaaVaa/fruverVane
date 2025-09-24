@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fruver Vane | Frutas y Verduras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="logo">
+  <img src="img/logo.jpeg" alt="Logo fruver" class="logo-img">
+  Fruver Vane
+</div>
+
+
+      <nav id="nav">
+        <a href="#frutas">Frutas</a>
+        <a href="#verduras">Verduras</a>
+        <a href="#raices">Raíces & Tubérculos</a>
+        <a href="#hierbas">Hierbas & Aromáticas</a>
+      </nav>
+      <div class="search">
+        <input id="searchInput" type="search" placeholder="Buscar producto..." />
+        <button class="btn cart-btn" onclick="openCart()">🛒 Carrito <span id="cartCount" class="badge" style="display:none">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <h1>Haz tu mercado online de forma fácil en la comodidad de tu hogar</h1>
+        <p>Compra por peso en kilos o libras.</p>
+      </div>
+      <img src="img/logo.jpeg" alt="Frutas y verduras frescas"/>
+    </div>
+  </section>
+
+  <main class="container grid">
+    <aside class="sidebar" id="cartSidebar" aria-label="Carrito de compras">
+      <h3 class="cart-title">🛒 Tu carrito</h3>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="totals"><span>Total</span><span id="cartTotal">$0</span></div>
+        <button class="btn" onclick="checkout()">Finalizar compra</button>
+        <button class="btn ghost" onclick="clearCart()">Vaciar carrito</button>
+        <div class="note">Los precios están expresados en COP por kilogramo. Si compras en libras, convertimos automáticamente (1 kg = 2.20462 lb).</div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <!-- FRUTAS -->
+      <section class="section" id="frutas" data-section="Frutas">
+        <h2>Frutas</h2>
+        <div class="subsections" data-subsections="frutas"></div>
+        <div class="cards" id="cards-frutas"></div>
+      </section>
+
+      <!-- VERDURAS -->
+      <section class="section" id="verduras" data-section="Verduras">
+        <h2>Verduras</h2>
+        <div class="subsections" data-subsections="verduras"></div>
+        <div class="cards" id="cards-verduras"></div>
+      </section>
+
+      <!-- RAICES -->
+      <section class="section" id="raices" data-section="Raíces & Tubérculos">
+        <h2>Raíces & Tubérculos</h2>
+        <div class="subsections" data-subsections="raices"></div>
+        <div class="cards" id="cards-raices"></div>
+      </section>
+
+      <!-- HIERBAS -->
+      <section class="section" id="hierbas" data-section="Hierbas & Aromáticas">
+        <h2>Hierbas & Aromáticas</h2>
+        <div class="subsections" data-subsections="hierbas"></div>
+        <div class="cards" id="cards-hierbas"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div><strong>Fruver Vane</strong> • Hecho con HTML, CSS y JavaScript puro. © <span id="year"></span></div>
+       <!-- <div class="note">*Entrega el mismo día sujeta a zona y disponibilidad.</div> --> 
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
