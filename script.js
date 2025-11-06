@@ -8,7 +8,7 @@ const catalog = {
       citricos: {
         name: "Cítricos",
         items: [
-          {id:"kiwi", name:"Kiwi", pricePerKg:20000, img:"https://www.5aldia.es/es/wp-content/uploads/2017/09/kiwi.jpeg", desc:"Dulce y acido, ideal para jugos frescos y ensaladas."},
+          {id:"kiwi", name:"Kiwi", pricePerKg:20000, img:"https://www.5aldia.es/es/wp-content/uploads/2017/09/kiwi.jpeg", desc:"Dulce y ácido, ideal para jugos frescos y ensaladas."},
           {id:"limon-tahiti", name:"Limón Tahití", pricePerKg:4000, img:"https://agroclick.org//images/blog/Blog%20Limo%CC%81n%20Tahiti%CC%81_2.jpg-04-10-2022%2016:53:12.jpg", desc:"Acidez equilibrada, perfecto para aderezos."},
           {id:"mandarina", name:"Mandarina", pricePerKg:5000, img:"https://static4.depositphotos.com/1020804/341/i/450/depositphotos_3415019-stock-photo-mandarine.jpg", desc:"Fácil de pelar, snack saludable."},
         ]
@@ -16,10 +16,10 @@ const catalog = {
       tropicales: {
         name: "Tropicales",
         items: [
-          {id:"mango-tommy", name:"Mango Tommy", pricePerKg:6500, img:"https://fruverhome.co/wp-content/uploads/2020/08/mango-tommy.jpg.webp", desc:" excelente fuente de vitamina C y pro vitamina A, que benefician la visión y el sistema inmunitario."},
+          {id:"mango-tommy", name:"Mango Tommy", pricePerKg:6500, img:"https://fruverhome.co/wp-content/uploads/2020/08/mango-tommy.jpg.webp", desc:"Excelente fuente de vitamina C y pro vitamina A, que benefician la visión y el sistema inmunitario."},
           {id:"papaya", name:"Papaya Hawaiana", pricePerKg:3000, img:"https://m.media-amazon.com/images/I/919wgTuDEZL.jpg", desc:"Suave y aromática, rica en papaina."},
           {id:"pina-golden", name:"Piña Golden", pricePerKg:2500, img:"https://fruverhome.co/wp-content/uploads/2020/08/Pi%C3%B1a-Golden.jpg", desc:"Dulce, de baja acidez, perfecta para postres."},
-          {id:"fresa", name:"fresa", pricePerKg:5000, img:"https://images.unsplash.com/photo-1464965911861-746a04b4bca6?q=80&w=1200&auto=format&fit=crop", desc:"Fácil de pelar, snack saludable."},
+          {id:"fresa", name:"Fresa", pricePerKg:5000, img:"https://images.unsplash.com/photo-1464965911861-746a04b4bca6?q=80&w=1200&auto=format&fit=crop", desc:"Fruto rojo, dulce y ligeramente ácido."},
         ]
       }
     }
@@ -80,9 +80,9 @@ const catalog = {
       pimientos: {
         name: "Aromaticas",
         items: [
-          {id:"manzanilla", name:"Manzanilla", pricePerKg:2000, img:"https://fruverhome.co/wp-content/uploads/2020/08/Manzanilla.jpg.webp", desc:"Ideal para problemas digestivos, los nervios o el colestero."},
-          {id:"toronjil", name:"Toronjil", pricePerKg:2500, img:"https://fundacionmujeresempresarias.org/wp-content/uploads/2018/07/toronjil-a.jpg", desc:"Fuerte aramoa a limon ayuda a controlar la ansiedad."},
-          {id:"hierba", name:"Hierba Buena", pricePerKg:1800, img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS27DYxUxr1VmWME98GIVvV59uS5jy-sDb3Bw&s", desc:"Ideal para dar sabor a guisos, ensaladas y bebidas refrescantes. ."},
+          {id:"manzanilla", name:"Manzanilla", pricePerKg:2000, img:"https://fruverhome.co/wp-content/uploads/2020/08/Manzanilla.jpg.webp", desc:"Ideal para problemas digestivos, los nervios o el colesterol."},
+          {id:"toronjil", name:"Toronjil", pricePerKg:2500, img:"https://fundacionmujeresempresarias.org/wp-content/uploads/2018/07/toronjil-a.jpg", desc:"Fuerte aroma a limon ayuda a controlar la ansiedad."},
+          {id:"hierba", name:"Hierba Buena", pricePerKg:1800, img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS27DYxUxr1VmWME98GIVvV59uS5jy-sDb3Bw&s", desc:"Ideal para dar sabor a guisos, ensaladas y bebidas refrescantes."},
         ]
       }
     }
