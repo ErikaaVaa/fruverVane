@@ -33,7 +33,7 @@ const catalog = {
           {id:"espinaca", name:"Espinaca", pricePerKg:7000, img:"https://boginatural.com/wp-content/uploads/2023/09/Espinaca-Americana.png", desc:"Tierna y rica en hierro."},
           {id:"lechuga", name:"Lechuga Crespa verde", pricePerKg:5000, img:"https://exitocol.vteximg.com.br/arquivos/ids/25416525/Lechuga-Verde-Crespa-En-Bolsa-X-200-gr-839802_a.jpg?v=638657248647430000", desc:"Crujiente, ideal para ensaladas César."},
           {id:"acelga", name:"Acelga", pricePerKg:6000, img:"https://exitocol.vtexassets.com/arquivos/ids/25419136/Acelga-X-500gr-909685_a.jpg?v=638657780613030000", desc:"Versátil para salteados y sopas."},
-          {id:"lechuga2", name:"Lechuga Romana", pricePerKg:6000, img:"https://cdn.pixabay.com/photo/2017/07/03/18/14/lettuce-2468495_1280.png", desc:"Hojas largas y alargadas, con un nervio central robusto y una textura crujiente."},
+          {id:"lechuga2", name:"Lechuga Romana", pricePerKg:6000, img:"https://mistiendas.com.co/72-large_default/lechuga-romana-kilo.jpg", desc:"Hojas largas y alargadas, con un nervio central robusto y una textura crujiente."},
         ]
       },
       cruciferas: {
