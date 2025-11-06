@@ -33,6 +33,7 @@ const catalog = {
           {id:"espinaca", name:"Espinaca", pricePerKg:7000, img:"https://boginatural.com/wp-content/uploads/2023/09/Espinaca-Americana.png", desc:"Tierna y rica en hierro."},
           {id:"lechuga", name:"Lechuga Crespa verde", pricePerKg:5000, img:"https://exitocol.vteximg.com.br/arquivos/ids/25416525/Lechuga-Verde-Crespa-En-Bolsa-X-200-gr-839802_a.jpg?v=638657248647430000", desc:"Crujiente, ideal para ensaladas César."},
           {id:"acelga", name:"Acelga", pricePerKg:6000, img:"https://exitocol.vtexassets.com/arquivos/ids/25419136/Acelga-X-500gr-909685_a.jpg?v=638657780613030000", desc:"Versátil para salteados y sopas."},
+          {id:"lechuga2", name:"Lechuga Romana", pricePerKg:6000, img:"https://cdn.pixabay.com/photo/2017/07/03/18/14/lettuce-2468495_1280.png", desc:"Hojas largas y alargadas, con un nervio central robusto y una textura crujiente."},
         ]
       },
       cruciferas: {
@@ -51,9 +52,10 @@ const catalog = {
       clasicos: {
         name: "Clásicos",
         items: [
-          {id:"papa", name:"Papa pastusa", pricePerKg:960, img:"https://mercadobecampo.com/cdn/shop/files/2340_IT_1x520_0328e34a-33b9-4042-bb42-f031ebe48053.jpg?v=1701048052", desc:"Pequeña y mantecosa, ideal para asados."},
+          {id:"papa", name:"Papa Pastusa", pricePerKg:960, img:"https://mercadobecampo.com/cdn/shop/files/2340_IT_1x520_0328e34a-33b9-4042-bb42-f031ebe48053.jpg?v=1701048052", desc:"Pequeña y mantecosa, ideal para asados."},
           {id:"yuca", name:"Yuca", pricePerKg:3200, img:"https://terrabad.co/wp-content/uploads/2020/09/yuca.jpg", desc:"Almidonosa, perfecta para frituras."},
           {id:"zanahoria", name:"Zanahoria", pricePerKg:2800, img:"https://vaquitaexpress.com.co/media/catalog/product/cache/e89ece728e3939ca368b457071d3c0be/2/8/286_32.jpg", desc:"Dulce y crujiente, de color intenso."},
+          {id:"papa2", name:"Papa Sabanera", pricePerKg:980, img:"https://sembrandoconfianza.com/wp-content/uploads/2022/04/Papa-Sabanera-1-1.jpg", desc:"Ideal para fritar, guiso, ensaladas, y asados, no se deshace fácilmente."},
         ]
       },
       bulbos: {
