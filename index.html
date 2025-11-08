@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home fruver Vane</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Fruver Vane</title>
   <style>
-    /* Reset */
+    /* RESET Y BASE */
     * {
       margin: 0;
       padding: 0;
@@ -13,52 +14,45 @@
       font-family: Arial, sans-serif;
     }
 
-    body {
+    html, body {
+      scroll-behavior: smooth;
       background-color: #fff;
       color: #333;
       line-height: 1.6;
     }
 
+    /* ENCABEZADO */
     header {
-      background-color: #fff;
-      border-bottom: 2px solid #f4b400; 
+      background: linear-gradient(135deg, #d1fae5, #fef9c3);
+      border-bottom: 2px solid #a37416;
       padding: 20px;
       text-align: center;
     }
 
     header h1 {
-      
-      background:linear-gradient(135deg,#d1fae5,#fef9c3);padding:28px 0;border-bottom:1px solid var(--line);
-     
-      color: #000000; 
-      font-size: 2rem;
-    }
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #166534, #a37416);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  margin: 0;
+}
 
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #0f080100;
-    }
-
+    /* SECCIÓN HERO */
     .hero {
       background: url("https://images.pexels.com/photos/5677795/pexels-photo-5677795.jpeg") no-repeat center center/cover;
       height: 60vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
       text-align: center;
+      color: white;
       padding: 20px;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
     }
 
     .hero h2 {
@@ -72,116 +66,156 @@
       display: inline-block;
       margin-top: 20px;
       padding: 12px 20px;
-      background-color: #a37416; 
+      background-color: #a37416;
       color: #fff;
       border: none;
       border-radius: 8px;
       font-size: 1rem;
       cursor: pointer;
-      transition: background 0.3s;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
     }
 
     .cta-btn:hover {
-      background-color: #a37416; 
-
+      background-color: #b9861f;
+      transform: scale(1.05);
     }
 
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-      text-align: center;
-    }
+   /* SECCIÓN SOBRE NOSOTROS */
 
-    .feature-card {
-      background: #fff8e1; 
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .feature-card h3 {
-      color: #f57c00;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      background:linear-gradient(135deg,#d1fae5,#fef9c3);padding:28px 0;border-bottom:1px solid var(--line);
-      color: #000000;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-    }
-/*seccion categorias*/ 
-
-    .categories-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-  margin: 2rem 0;
+.about {
+  padding: 60px 10%;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+  background-color: #fff; /* fondo limpio */
 }
 
-.cat-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 30px;
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: bold;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.cat-card:hover {
-  background: #f1f1f1;
-  transform: translateY(-3px);
-}
-
-
-    .cat-card.frutas { border-top: 5px solid #f87171; }
-.cat-card.verduras { border-top: 5px solid #4ade80; }
-.cat-card.hierbas { border-top: 5px solid #34d399; }
-.cat-card.raices { border-top: 5px solid #fbbf24; }
-
-
-
-/*seccion sobre nosotros*/
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 3rem;
   align-items: center;
-  margin: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .about-text {
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.8;
+  text-align: center;
+  color: #333;
+}
+
+.about-text h2 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
 }
 
 .about-img img {
-      max-width: 280px; /*  tamaño */
-      height: auto;
-      border-radius: 50%;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 320px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .about {
+    padding: 50px 8%;
+  }
+
+  .about-img img {
+    max-width: 220px;
+  }
+}
+
+    /* CATEGORÍAS */
+    .categories {
+      padding: 40px 20px;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
     }
 
-/*fin*/
+    .categories h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #000000;
+    }
 
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      margin: 2rem 0;
+    }
+
+    .cat-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .cat-card:hover {
+      background: #fffbe6;
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .cat-card.frutas { border-top: 5px solid #f87171; }
+    .cat-card.verduras { border-top: 5px solid #4ade80; }
+    .cat-card.hierbas { border-top: 5px solid #34d399; }
+    .cat-card.raices { border-top: 5px solid #fbbf24; }
+
+    /* FOOTER */
+    footer {
+      background: linear-gradient(135deg, #d1fae5, #fef9c3);
+      color: #000000;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    footer strong {
+      color: #166534;
+    }
+
+    /* ANIMACIONES */
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1> Fruver Vane</h1>
-    
+    <h1>Fruver Vane</h1>
+  </header>
 
   <section class="hero">
     <div>
@@ -190,46 +224,53 @@
     </div>
   </section>
 
-  <!-- Sección Sobre Nosotros -->
-<section class="about">
-  <div class="container about-grid">
-    <div class="about-text">
-      <h2>Sobre Nosotros</h2>
+  <!-- SECCIÓN SOBRE NOSOTROS -->
+  <section class="about">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Sobre Nosotros</h2>
       <p>
         Bienvenido a Fruver Vane, tu destino confiable para la compra de frutas y verduras frescas. 
         Aquí podrás elegir y adquirir tus productos favoritos desde la comodidad de tu hogar, pagando fácilmente
         por peso en kilos o libras. Acá ofrecemos calidad, frescura y el mejor servicio para que disfrutes 
         de una alimentación saludable sin complicaciones.
-      </p>
-      <p> <strong> ¡Haz tu pedido ahora y recibe lo mejor de la naturaleza directamente en tu puerta!</strong></p>
+        </p>
+        <p><strong>¡Haz tu pedido ahora y recibe lo mejor de la naturaleza directamente en tu puerta!</strong></p>
+      </div>
+      <div class="about-img">
+        <img src="img/logo.jpeg" alt="logo principal">
+      </div>
     </div>
-    <div class="about-img">
-      <img src="img/logo.jpeg" alt="logo principal">
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- Sección Categorías -->
- <section class="categories">
-  <div class="container">
-    <h2>Categorías</h2>
-<div class="categories-grid">
-  <a href="homee.html" class="cat-card frutas">🍎 Frutas</a>
-  <a href="homee.html#verduras" class="cat-card verduras">🥦 Verduras</a>
-    <a href="homee.html#raices" class="cat-card raices">🥔 Tubérculos</a>
-  <a href="homee.html#hierbas" class="cat-card hierbas">🌿 Hierbas</a>
-
-</div>
-
-  <footer>
+  <!-- SECCIÓN CATEGORÍAS -->
+  <section class="categories">
     <div class="container">
-      <div><strong>Fruver Vane| Frescura garantizada 🌿 ·  Entregas el mismo día 🚚 ·  Compra segura 💳</strong> </div>
-     <div>• Hecho con HTML, CSS y JavaScript puro. © <span id="year"></span></div> 
-       <!-- <div class="note">*Entrega el mismo día sujeta a zona y disponibilidad.</div> --> 
+      <h2>Categorías</h2>
+      <div class="categories-grid">
+        <a href="homee.html" class="cat-card frutas">🍎 Frutas</a>
+        <a href="homee.html#verduras" class="cat-card verduras">🥦 Verduras</a>
+        <a href="homee.html#raices" class="cat-card raices">🥔 Tubérculos</a>
+        <a href="homee.html#hierbas" class="cat-card hierbas">🌿 Hierbas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <div><strong>Fruver Vane</strong> | Frescura garantizada 🌿 · Entregas el mismo día 🚚 · Compra segura 💳</div>
+      <div>© <span id="year"></span> Todos los derechos reservados</div>
+    </div>Hecho con HTML, CSS y JavaScript puro. </div>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
 
 
 
