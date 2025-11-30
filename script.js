@@ -79,7 +79,7 @@ const catalog = {
         items: [
           {id:"cilantro", name:"Cilantro", pricePerKg:10000, img:"https://www.fruvext.com.co/wp-content/uploads/2021/06/cilantro.jpg", desc:"Ideal para guacamole."},
           {id:"perejil", name:"Perejil", pricePerKg:9000, img:"https://fruverhome.co/wp-content/uploads/2020/08/Perejil-Crespo.jpg.webp", desc:"Perfecto para salsas."},
-          {id:"apio", name:"Apio", pricePerKg:16000, img:"https://www.fruvext.com.co/wp-content/uploads/2021/06/Apio.png", desc:"Ideal para ensaladas."}
+          {id:"apio", name:"Apio", pricePerKg:16000, img:"https://www.fruvext.com.co/wp-content/uploads/2021/06/Apio-Comprar-frutas-y-verduras-en-Online-Domicilio-Bogota.png", desc:"Ideal para ensaladas."}
         ]
       },
       pimientos: {
